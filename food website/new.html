@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Style.css">
+    <title>New Items</title>
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <!-- <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script> -->
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+    <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+            apiKey: "AIzaSyAjcxvDn4EhHreeUt5Gg1EnLLLChECyMUk",
+            authDomain: "authentication-4ca9f.firebaseapp.com",
+            projectId: "authentication-4ca9f",
+            storageBucket: "authentication-4ca9f.appspot.com",
+            messagingSenderId: "99243685441",
+            appId: "1:99243685441:web:ccb38a68f66449018638c0"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+    </script>
+</head>
+
+<body onload="getItems()">
+
+
+    <header>
+
+        <a href="#" class="logo"><i class="fas fa-utensils"></i>food</a>
+
+        <div id="menu-bar" class="menu"></div>
+
+        <nav class="navbar">
+            <a href="../food website/index.html">home</a>
+            <a href="../food website/speciality.html">speciality</a>
+            <a href="popularity.html">popular</a>
+            <a href="review.html">review</a>
+            <a href="order.html">order</a>
+            <a href="new.html">New Items</a>
+        </nav>
+
+    </header>
+    <section class="speciality" id="speciality">
+        <br><br><br>
+
+        <h1 class="heading"> our <span>New Items</span> </h1>
+
+
+
+        <div class="card-div" id="box-container" style="width: 60%;">
+            <!-- <div class="card" style="width: 60%;">
+                <div class="card-body">
+                    <h1 id="textp">${data.val().title}</h1>
+                    <h3 id="discriptionp"> ${data.val().description}</h3>
+                </div>
+                <img src="https://www.w3schools.com/bootstrap4/img_avatar1.png" class="card-img-top img" alt="...">
+
+            </div> -->
+        </div>
+
+    </section>
+
+</body>
+<script src="script.js"></script>
+
+</html>

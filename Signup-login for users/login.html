@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title> Login Form </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  
+  
+  
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+<!-- <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script> -->
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyAjcxvDn4EhHreeUt5Gg1EnLLLChECyMUk",
+    authDomain: "authentication-4ca9f.firebaseapp.com",
+    projectId: "authentication-4ca9f",
+    storageBucket: "authentication-4ca9f.appspot.com",
+    messagingSenderId: "99243685441",
+    appId: "1:99243685441:web:ccb38a68f66449018638c0"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+</script>
+  
+  
+  
+  
+  </head>
+  <body>
+    <div class="center">
+      <h1 style="color: #0f0202;">Login</h1>
+      <div class="main_div">
+
+        
+        <div class="form-group">
+          <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="" required>
+          <span></span>
+          <label for="email">Email</label>
+          <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
+        </div>
+
+        
+        <div class="form-group">
+          <input type="password" class="form-control" id="password" placeholder="" required>
+          <span></span>
+          <label for="Password">Password</label>
+        </div>
+        <div class="col-sm-10">
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="gridRadios" id="user" value="option1" checked>
+            <label class="form-check-label" for="gridRadios1" style="color: #0f0202;">
+             Customer
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="gridRadios" id="employee" value="option2">
+            <label class="form-check-label" for="gridRadios2" style="color: #0f0202;">
+              Employee
+            </label>
+          </div>
+        
+        <!-- <div class="pass">Forgot Password?</div> -->
+        <button onclick="login()" class="button">login in</button>
+        <br><br>
+        <div class="alert alert-light" role="alert" id="message" style="width: 340px;  background: rgba(66, 75, 77, 0.3) ; border: none;"></div>
+        <div class="link">
+          Not a member? <a href="signin.html">Signin</a>
+        </div>
+      
+    </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="app.js"></script>    
+  </body>
+</html>

@@ -1,0 +1,39 @@
+
+body{
+    background-color: rgb(198, 198, 216);
+}
+
+.maindiv .form-control{
+    text-align: center;
+    margin-left: 15%;
+}
+
+.Center{
+    /* background-color: rgb(244, 242, 246); */
+    position: relative;
+    top: 300px;
+    /* right: 450%; */
+    left: 400px;
+    transform: translate(0, -40%);
+    /* border: 1px ridge rgb(70, 0, 128) ; */
+    padding: 20px;
+}
+#message{
+    text-align: center;
+    color: brown;
+}
+.form-group{
+    justify-content: center;
+    margin-left: 28%;
+}
+label{
+    margin-left: 20%;
+}
+button{
+    margin-left: 12%;
+    border: none;
+}
+h2{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin-left: 15%;
+}

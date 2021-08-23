@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Style.css">
+     <!-- font awesome cdn link  -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <title>Document</title>
+     <!-- The core Firebase JS SDK is always required and must be listed first -->
+     <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+     <!-- <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script> -->
+     <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
+ 
+     <!-- TODO: Add SDKs for Firebase products that you want to use
+      https://firebase.google.com/docs/web/setup#available-libraries -->
+ 
+     <script>
+         // Your web app's Firebase configuration
+         var firebaseConfig = {
+             apiKey: "AIzaSyAjcxvDn4EhHreeUt5Gg1EnLLLChECyMUk",
+             authDomain: "authentication-4ca9f.firebaseapp.com",
+             projectId: "authentication-4ca9f",
+             storageBucket: "authentication-4ca9f.appspot.com",
+             messagingSenderId: "99243685441",
+             appId: "1:99243685441:web:ccb38a68f66449018638c0"
+         };
+         // Initialize Firebase
+         firebase.initializeApp(firebaseConfig);
+     </script>
+ 
+</head>
+<body>
+    <header>
+
+        <a href="#" class="logo"><i class="fas fa-utensils"></i>food</a>
+    
+        <div id="menu-bar" class="menu"></div>
+    
+        <nav class="navbar">
+            <a href="index.html">home</a>
+            <a href="speciality.html">speciality</a>
+            <a href="popularity.html">popular</a>
+            <a href="review.html">review</a>
+            <a href="order.html">order</a>
+            <a href="new.html">New Items</a>
+        </nav>
+    
+    </header>
+
+    <section class="popular" id="popular">
+        <br><br><br>
+        <h1 class="heading"> most <span>popular</span> foods </h1>
+    
+        <div class="box-container">
+    
+            <div class="box">
+                <span class="price" id="tasty_burger_price"> 580 RS </span>
+                <img src="images/p-1.jpg" alt="">
+                <h3 id="tasty_burger">BEEF BURGER</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <a href="#" class="btn" onclick="order1()">order now</a>
+            </div>
+            <div class="box">
+                <span class="price" id="tasty_cake_price"> 1100 RS </span>
+                <img src="images/p-2.jpg" alt="">
+                <h3 id="tasty_cake">PAN CAKES</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <a href="#" class="btn" onclick="order2()">order now</a>
+            </div>
+            <div class="box">
+                <span class="price" id="tasty_sweets_price">  699 RS </span>
+                <img src="images/p-3.jpg" alt="">
+                <h3 id="tasty_sweets">SWEET</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <a href="#" class="btn" onclick="order3()">order now</a>
+            </div>
+            <div class="box">
+                <span class="price" id="pan_cake_price"> 799 RS</span>
+                <img src="images/p-4.jpg" alt="">
+                <h3 id="pan_cake">PAN CAKES</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <a href="#" class="btn" onclick="order4()">order now</a>
+            </div>
+            <div class="box">
+                <span class="price" id="cold_drink_price"> 200 RS </span>
+                <img src="images/p-5.jpg" alt="">
+                <h3 id="cold_drink">COLD DRINKS</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <a href="#" class="btn" onclick="order5()">order now</a>
+            </div>
+            <div class="box">
+                <span class="price" id="cold_ice_price"> 199 RS</span>
+                <img src="images/p-6.jpg" alt="">
+                <h3 id="cold_ice">COLD ICE-CREAM</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <a href="#" class="btn" onclick="order6()">order now</a>
+            </div>
+    
+        </div>
+    
+    </section>
+</body>
+<script src="script.js"></script>
+</html>

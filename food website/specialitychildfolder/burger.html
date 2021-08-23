@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Style.css">
+     <!-- font awesome cdn link  -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <title>Document</title>
+</head>
+ <!-- The core Firebase JS SDK is always required and must be listed first -->
+ <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+ <!-- <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script> -->
+ <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
+ 
+ <!-- TODO: Add SDKs for Firebase products that you want to use -->
+      https://firebase.google.com/docs/web/setup#available-libraries
+ 
+  <script>
+   // Your web app's Firebase configuration
+   var firebaseConfig = {
+     apiKey: "AIzaSyAjcxvDn4EhHreeUt5Gg1EnLLLChECyMUk",
+     authDomain: "authentication-4ca9f.firebaseapp.com",
+     projectId: "authentication-4ca9f",
+     storageBucket: "authentication-4ca9f.appspot.com",
+     messagingSenderId: "99243685441",
+     appId: "1:99243685441:web:ccb38a68f66449018638c0"
+   }; 
+    // Initialize Firebase
+   firebase.initializeApp(firebaseConfig);
+   </script>
+<body>
+    
+        <header>
+
+            <a href="#" class="logo"><i class="fas fa-utensils"></i>food</a>
+        
+            <div id="menu-bar" class="menu"></div>
+        
+            <nav class="navbar">
+                <a href="../index.html">home</a>
+                <a href="../speciality.html">speciality</a>
+                <a href="../popularity.html">popular</a>
+                <a href="../review.html">review</a>
+                <a href="../new.html">New Items</a>
+            </nav>
+        
+        </header>
+
+        <section class="popular" id="popular">
+            <br><br><br>
+
+            <h1 class="heading"> our <span>Burgers's</span> </h1>
+        
+            <div class="box-container">
+    
+                <div class="box">
+                    <span class="price" id="godzilla_price"> 800 RS </span>
+                    <img src="../specialitychildfolder/burgers imp/download (1).jpg" alt="">
+                    <h3 id="godzilla">Godzilla</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <a href="#" class="btn" onclick="order7()">order now</a>
+                </div>
+                <div class="box">
+                    <span class="price" id="chapli_price"> 600 RS </span>
+                    <img src="../specialitychildfolder/burgers imp/download.jpg" alt="">
+                    <h3 id="chapli">Chapli Special Cruncher</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <a href="#" class="btn" onclick="order8()">order now</a>
+                </div>
+                <div class="box">
+                    <span class="price" id="bruster_price"> 850 RS </span>
+                    <img src="../specialitychildfolder/burgers imp/Cheese.jpg" alt="">
+                    <h3 id="bruster">Cheese Bruster</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <a href="#" class="btn" onclick="order9()">order now</a>
+                </div>
+
+            </div>
+        
+        </section>
+      
+
+<script src="../script.js"></script>
+</body>
+</html>

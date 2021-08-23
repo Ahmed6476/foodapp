@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Sign in</title>
+
+
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+<!-- <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script> -->
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyAjcxvDn4EhHreeUt5Gg1EnLLLChECyMUk",
+    authDomain: "authentication-4ca9f.firebaseapp.com",
+    projectId: "authentication-4ca9f",
+    storageBucket: "authentication-4ca9f.appspot.com",
+    messagingSenderId: "99243685441",
+    appId: "1:99243685441:web:ccb38a68f66449018638c0"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+</script>
+</head>
+
+<body class="backgroung_img">
+    <div class="center">
+        <h1 style="color: #0f0202;">Sign in</h1>
+        <div class="main_div">
+
+            
+            <div class="form-group">
+                <!-- User name -->
+                <input type="text" class="form-control" id="username" aria-describedby="emailHelp" placeholder="" required>
+                <span></span>
+                <label for="exampleInputEmail1">Username</label>
+            </div>
+            
+            
+            <div class="form-group">
+                <!-- Address -->
+                <input type="text" class="form-control" id="address" aria-describedby="emailHelp" placeholder="" required>
+                <span></span>
+                <label for="exampleInputEmail1"> Address</label>
+            </div>
+            
+            
+            <div class="form-group">
+                <!-- phone-no -->
+                <input type="text" class="form-control" id="phone_no" aria-describedby="emailHelp" placeholder="" required>
+                <span></span>
+                <label for="exampleInputEmail1">Phone no</label>
+            </div>
+            
+            <div class="form-group">
+                <!-- Email -->
+                <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="" required>
+                <span></span>
+                <label for="exampleInputEmail1">Email Address</label>
+            </div>
+            <div class="form-group">
+                <!-- Password -->
+                <input type="password" class="form-control" id="password" placeholder="" required>
+                <span></span>
+                <label for="exampleInputPassword1">Password</label>
+            </div>
+            <!-- <div class="pass">Forgot Password?</div> -->
+            <button onclick="signin()" class="button">Sign in</button>
+            <div class="link">
+                Alredy has account? <a href="login.html">Login</a>
+            </div>
+        
+    </div>
+    </div>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="app.js"></script>    
+
+</body>   
+</html>
